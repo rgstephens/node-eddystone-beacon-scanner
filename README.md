@@ -56,7 +56,7 @@ EddystoneBeaconScanner.on('lost', function(beacon) {
 
 The ```beacon``` object will have the following properties depending on the frame type:
 ##### URL
-
+ * ```address``` - Bluetooth address
  * ```type``` - Eddystone type
  * ```txPower``` - Measured received power at 0 m in dBm
  * ```url``` - (expanded) URL the beacon is broadcasting
@@ -65,6 +65,7 @@ The ```beacon``` object will have the following properties depending on the fram
  * ```distance``` - Approximate distance from beacon
 
 ##### UID
+ * ```address``` - Bluetooth address
  * ```type``` - Eddystone type
  * ```txPower``` - Measured received power at 0 m in dBm
  * ```namespace``` - 10-byte ID Namespace
@@ -74,6 +75,7 @@ The ```beacon``` object will have the following properties depending on the fram
  * ```distance``` - Approximate distance from beacon
 
 ##### TLM
+ * ```address``` - Bluetooth address
  * ```tlm```
    * ```version``` - TLM version
    * ```vbatt``` - Battery voltage
